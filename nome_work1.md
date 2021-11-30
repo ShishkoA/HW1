@@ -48,6 +48,7 @@ cd ../home/linux
 cd /home/linux
 
 ## 6)
+```bash
 mkdir -p new in-process/tread{0..2} processed
 touch new/data{00..99}
 cp new/data{00..33} in-process/tread0
@@ -63,3 +64,4 @@ cp in-process/tread{0..2}/* processed
 ls in-process processed
 
 diff -q new processed
+```
